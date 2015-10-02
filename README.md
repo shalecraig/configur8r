@@ -2,11 +2,18 @@
 
 I really liked the clean design of Ruby's [Configatron](https://github.com/markbates/configatron), and wanted to play around with implementing the same thing in Java.
 
+This pulls variables/configuration into generated source-code at compile-time, so you don't need to check in your configuration variables.
+
+At one point in time, I looked into allowing you to pull in the variables at runtime too, but haven't implemented it yet.
+
+In either case, there should be (is?) a check to see if all the required variables are present.
+
 # Status
 
 - Don't use this in production, I wrote it for fun over a ~weekend.
 - Right now, this will inline ENV variables into the configuration at compile-time.
 - At some point in time, this will pull from a YAML. That day is not today.
+- At some point in time, this will let you differentiate from compile-time variables (e.g. "database URL", etc) and runtime variables (e.g. "database_password")
 
 # Testing
 
