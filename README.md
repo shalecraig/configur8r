@@ -1,3 +1,15 @@
+# Motivation
+
+I really liked the clean design of Ruby's [Configatron](https://github.com/markbates/configatron), and wanted to play around with implementing the same thing in Java.
+
+# Status
+
+- Don't use this in production, I wrote it for fun over a ~weekend.
+- Right now, this will inline ENV variables into the configuration at compile-time.
+- At some point in time, this will pull from a YAML. That day is not today.
+
+# Testing
+
 For now, you can run tests with:
 
 ```bash
